@@ -1,0 +1,133 @@
+body {
+    background-color: #2ab7ca;
+    color: #000000;
+    font-family: Futura, Gill Sans MT, sans-serif;
+}
+
+.main {
+    width: 1000px;
+    height: 500px;
+    /*This automatically centers*/
+    margin: 0 auto;
+    margin-top: 100px;
+    /*This border is to show boundaries*/
+    border: 3px solid black;
+}
+
+/*when dealing with a class inside of another class, mark the primary class, then the subclass*/
+.main .left {
+    background-color: #fe4a49;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    /*This border is to show boundaries*/
+    /*border: 1px solid black;*/
+}
+
+/*same as the above comment, but you can specifically target an element*/
+.main .left h1 {
+    margin-top: 100px;
+}
+
+/*form input have auto borders*/
+.left form input {
+    text-align: center;
+    width: 60%;
+    height: 25px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #e6e6ea;
+    /*border-radius turned the input and submit fields to rounded rectangles*/
+    border-radius: 25px;
+}
+
+/*this will remove the outline for the input fields
+spacing is important!*/
+.left form input:focus {
+    outline: none;
+}
+
+/*cursor: pointer changes the mouse's icon into a hand
+spacing is important*/
+.left form input[type="submit"] {
+    background-color: #fed766;
+    color: #f4f4f8;
+    cursor: pointer;
+}
+
+.left form input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+.left p.recover:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*position positions the element on the page
+using absolute position in combination with left 0% sets the element to the left 
+border radius creates a circle around or*/
+.left p.or {
+    font-size: 15px;
+    width: 40px;
+    height: 30px;
+    padding-top: 10px;
+    background-color: #fe4a49;
+    border-radius: 50%;
+    position: absolute;
+    left: 96%;
+}
+
+.main .right {
+    text-align: center;
+}
+
+.main .right h1 {
+    margin-top: 100px;
+}
+
+.right .social {
+    margin-top: 40px;
+}
+
+.social button {
+    border: none;
+    padding: 15px;
+    width: 50px;
+    font-size: 15px;
+    background-color: #e6e6ea;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.social .facebook {
+    color: #012677;
+}
+
+.social .facebook:hover {
+    background-color: #012677;
+    color: #e6e6ea;
+    cursor: pointer;
+}
+
+.social .twitter {
+    color: #55acee;
+}
+
+.social .twitter:hover {
+    background-color: #55acee;
+    color: #e6e6ea;
+    cursor: pointer;
+}
+
+.social .google {
+    color: #d50f25;
+}
+
+.social .google:hover {
+    background-color: #d50f25;
+    color: #e6e6ea;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" style="
+        text-align: center;
+        max-width: min-content;
+        padding: 5%">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String Sandwhich</title>
+</head>
+<body >
+    <div style="background-color: cadetblue;min-width: 250px;min-height: 250px;">
+        <h2 style="padding-top:3%">String Sandwhich</h2><br>
+        <label for="bread" >Bread + Butter</label><br>
+        <input type="text" id="bread" placeholder=" 4 letter word Only "><br>
+        <label for="filling" >Fillings </label><br>
+        <input type="text" id="filling" placeholder=" Enter Any Word "><br>
+        <hr>
+        <button type="button" onclick="makeAStringSandwhich(bread, filling)" style="color:aliceblue;background-color: black">Make Me A Sandwhich</button>
+        <hr>
+        <span id="fillingtype"></span><span> into </span><span id="breadtype"></span><br>
+        <span id="strSandwhichvalue" ></span>
+
+    </div>
+    <script src="stringSandwhich.js"></script>
+</body>
+</html>

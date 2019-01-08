@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" style="
+    text-align: center;
+    max-width: min-content;
+    padding: 5%">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body > 
+    <div style="background-color: rgb(7, 64, 66);min-width: 250px;min-height: 250px;">
+        <h2 style="color: tomato">STRING times</h2>
+        <input 
+        type="text"
+        style="color: tomato"
+        id="favoriteWord" 
+        placeholder="favorite word">
+        <hr>
+        <input 
+        type="number"
+        style="color: tomato"
+        id="favoriteNumber"
+        placeholder="favorite number"
+        oninput="makeAStringSandwhich()">
+        <hr>
+        <button type="button"
+        style="color: tomato"
+        onclick="makeAStringSandwhich()"> stinGTimes </button><br>
+        <hr>
+        <span id="favoriteWordValue" style="color: tomato"></span>
+        <span style="color: tomato">  *  </span>
+        <span id="favoriteNumberValue" style="color: tomato"></span>
+        <hr>
+        <span 
+        id="favWordTimesValue"
+        style="color: tomato"></span>
+    </div>
+    <script src="stringTimes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    background: #e9eb9e;
+    color: #14080e;
+    font: Arial;
+}
+
+.title {
+    padding: 100px;
+    margin: 0 auto;
+    float: left;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+h3 {
+    color: #49475b;
+}
+
+.row {
+    margin-top: 50px;
+    color: #49475b;
+}
+
+.row input {
+    text-align: center;
+    width: 15%;
+    height: 25px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.row hr {
+    border-color: #14080e;
+}

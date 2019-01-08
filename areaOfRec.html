@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+    <title>Area of a Rectangle</title>
+
+    <link type="text/css" href="main.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+    <div class="title">
+
+        <h2>Area and Perimeter of Rectangle Calculator</h2>
+
+        <h3>Please Enter Length And Width</h3>
+
+    </div>
+
+    <div class="row">
+
+        <input type="number" id="height" placeholder="length">
+        <input type="number" id="width" placeholder="width">
+        <button type="button" onclick="getHeightAndWidth()">Set Values</button><br>
+
+        <hr>
+
+    </div>
+
+    <div class="row" >
+
+        <button type="button" onclick="area(height,width)">GET AREA</button>
+
+        <h3> Area = <label id="heightvalue"></label> * <label id="widthvalue"></label></h3>
+
+        <h4 id="areaOfRectangle" ><h4>
+
+            <br>
+
+        <hr>
+
+    </div>
+    
+    <label></label>
+
+    <div class="row">
+
+            <button type="button" onclick="perimeter(height, width)">GET PERIMETER</button>
+
+            <h3>Perimeter = 2 * ( <label id="heightvalue2"></label> + <label id="widthvalue2"></label>)</h3>
+
+            <h4 id="perimeterOfRectangle"></h4>
+            
+            <br>
+
+            <hr>
+
+        </div>
+
+    <script src="areaOfRec.js"></script>
+
+</body>
+
+</html>

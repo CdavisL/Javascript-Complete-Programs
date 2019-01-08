@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Simple Login Form</title>
+
+    <link type="text/css" href="simpleLogin.css" rel="stylesheet"/>
+
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+</head>
+
+<body>
+    <!-- this is a simple login form using html and css -->
+
+    <div class="main">
+
+        <div class="left">
+
+            <h1>Log In</h1>
+
+            <!-- unnecessary element??? -->
+            <p>To Your Account</p>
+
+            <p class="or">or</p>
+
+            <!-- you can change this style in css -->
+            <form>
+
+                <input type="text" placeholder="username"/>
+
+                <!-- setting the type to password automatically encrypts the text entered -->
+                <input type="password" placeholder="password"/>
+
+                <!-- this creates a submission button, the value is the "thing" being submitted 
+                you can also change the style of this button inline -->
+                <input type="submit" value="LOG IN"/>
+
+            </form>
+
+            <p class="recover">Forgot username or password?</p>
+
+        </div>
+
+        <div class="right">
+
+            <h1>Sign In</h1>
+
+            <p>Use Your Facebook, Twitter, or Google+ Account</p>
+
+            <div class="social">
+
+                <button class="facebook"><i class="fa fa-facebook"></i></button>
+
+                <button class="twitter"><i class="fa fa-twitter"></i></button>
+
+                <button class="google"><i class="fa fa-google-plus"></i></button>
+
+            </div>
+        </div>
+    
+</body>
+
+</html>
