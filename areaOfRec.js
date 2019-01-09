@@ -6,7 +6,7 @@
 // perimeter = 2 * (height + width);
 var height;
 var width;
-var tip = prompt("Set the Height and the Width before doing any thing!");
+var tip = confirm("Set the Height and the Width before doing any thing!");
 console.log(tip);
 
 //this function goes the linked html and fetches these elements by id
