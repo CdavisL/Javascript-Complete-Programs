@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>String Sandwich</title>
+
+    <link type="text/css" href="main2.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>String Sandwich</h2>
+        <br>
+
+        <label for="bread" >Bread + Butter</label>
+        <br>
+
+        <input type="text" id="bread" placeholder=" 4 letter word Only ">
+        <br>
+
+        <label for="filling" >Fillings </label>
+        <br>
+
+        <input type="text" id="filling" placeholder=" Enter Any Word ">
+        <br>
+
+        <hr>
+
+        <button type="button" onclick="makeAStringSandwich(bread, filling)">Make Me A Sandwich</button>
+
+        <hr>
+
+        <span id="fillingtype"></span><span> into </span><span id="breadtype"></span>
+        <br>
+
+        <span id="strSandwichvalue" ></span>
+
+    </div>
+
+    <script src="stringSandwich.js"></script>
+
+</body>
+
+</html>

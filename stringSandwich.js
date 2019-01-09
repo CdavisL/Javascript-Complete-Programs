@@ -9,19 +9,19 @@
 
 var bread;
 var filling;
-var strSandwhich;
+var strSandwich;
 
 function getingredients() {
     bread = document.getElementById("bread").value;
     document.getElementById("breadtype").innerHTML = bread;
     filling = document.getElementById("filling").value;
     document.getElementById("fillingtype").innerHTML = filling;
-    strSandwhich = bread.substring(0,2) + filling + bread.substring(2);
-    document.getElementById("strSandwhichvalue").innerHTML = strSandwhich;
+    strSandwich = bread.substring(0,2) + filling + bread.substring(2);
+    document.getElementById("strSandwichvalue").innerHTML = strSandwich;
 }
 
-function makeAStringSandwhich(bread, filling) {
+function makeAStringSandwich(bread, filling) {
     getingredients();
     
-    console.log(strSandwhich);
+    console.log(strSandwich);
 }
