@@ -28,3 +28,18 @@ else {
     console.log(false);
     }
 }
+
+var name = Number(prompt("Please enter a name."));
+var month = Number(prompt("Please enter a month."));
+var arith = prompt("Please enter an operator: +, -, *, or /");
+
+switch arith() {
+    case "+" : console.log(num1 + num2);
+    break;
+    case "-" : console.log(num1 - num2);
+    break;
+    case "*" : console.log(num1 * num2);
+    break;
+    case "/" : console.log(num1 / num2);
+    break;
+}

@@ -1,45 +1,58 @@
 body {
-    background: #f5ffc5;
-    color: #221f17;
-    font: Arial;
+    background: #fdfffc;
+    color: #161925;
+    font: Garamond;
+    font-size: 14pt;
+    text-indent: 35px;
 }
 
-.title {
-    padding: 100px;
-    margin: 0 auto;
-    float: left;
-    width: 20%;
-    height: 100%;
+body button {
+    background: #161925;
+    color: #fdfffc;
+    font-weight: bolder;
     text-align: center;
+    height: 30px;
 }
 
-h3 {
-    color: #6c0e23;
-}
-
-.row {
-    margin-top: 50px;
-    color: #6c0e23;
-}
-
-.row input {
+body button {
+    background: #161925;
+    color: #fdfffc;
+    font-weight: bolder;
     text-align: center;
-    width: 10%;
-    height: 25px;
-    margin-bottom: 10px;
-    border: none;
+    height: 30px;
 }
 
-.row button {
-    background: #fcfdfd;
-    color: #878472;
+body button:focus {
     outline: none;
-    text-align: center;
-    width: 10%;
-    height: 25px;
-    margin-bottom: 10px;
 }
 
-.row hr {
-    border-color: #221f17;
+body button[type="button"]:hover {
+    background: #fdfffc;
+    color: #08415c;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.question {
+    padding: 50px;
+    margin: 0 auto;
+    text-decoration: underline overline;
+    text-decoration-style: dotted;
+    text-align: center;
+    color: #fdfffc;
+    background: #161925;
+}
+
+.intro mark {
+    color: #fdfffc;
+    background-color: #08415c;
+    font-weight: bold;
+    text-align: justify left;
+}
+
+.chrono mark {
+    color: #fdfffc;
+    background-color: #08415c;
+    font-weight: bold;
+    text-align: justify left;
 }

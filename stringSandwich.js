@@ -11,17 +11,17 @@ var bread;
 var filling;
 var strSandwich;
 
-function getingredients() {
+function getIngredients() {
     bread = document.getElementById("bread").value;
-    document.getElementById("breadtype").innerHTML = bread;
+    document.getElementById("breadType").innerHTML = bread;
     filling = document.getElementById("filling").value;
-    document.getElementById("fillingtype").innerHTML = filling;
+    document.getElementById("fillingType").innerHTML = filling;
     strSandwich = bread.substring(0,2) + filling + bread.substring(2);
-    document.getElementById("strSandwichvalue").innerHTML = strSandwich;
+    document.getElementById("strSandwichValue").innerHTML = strSandwich;
 }
 
 function makeAStringSandwich(bread, filling) {
-    getingredients();
+    getIngredients();
     
     console.log(strSandwich);
 }
