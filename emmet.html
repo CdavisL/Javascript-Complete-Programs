@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Emmet Notes</title>
 
+    <link type="text/css" href="emmet.css" rel="stylesheet"/>
+
 </head>
 
 <body>
@@ -21,19 +23,89 @@
 
     <p><em>Hint: check the console log.</em></p>
 
-    <p><code>!</code></p>
+    <p><code>!</code>
+    <br>This sets up an html file.
+    </p>
 
-    <p><code>li>a</code></p>
+    <p><code>li>a</code>
+    <br>This creates a list with an link.
+    </p>
 
-    <p><code>div.container</code></p>
+    <p><code>div.container</code>
+    <br>This creates a div with a class called container.
+    </p>
 
-    <p><code>#container</code></p>
+    <p><code>#container</code>
+    <br>This creates a div with an id called container.
+    </p>
 
-    <p><code>#container.block-1.block-2.block-3.</code></p>
+    <p><code>#container.block-1.block-2.block-3.</code>
+    <br>This creates a div with an id called container with multiple blocks with the class of 1, 2, 3.
+    </p>
 
-    <p><code>ul>li</code></p>
+    <p><code>ul>li</code>
+    <br>This creates an unordered list. Of note the > means that list goes inside the ul element.
+    </p>
 
-    <p><code>h1{Noctis is the best protagonist!}+h5{Gladio is still my favorite though.}</code></p>
+    <p><code>h1{Noctis is the best protagonist!}+h5{Gladio is still my favorite though.}
+    <br>This creates an h1 element containing the text inside the brackets with a sibling element (h5 containing it's own text).
+    </code></p>
+
+    <h2>Expansion</h2>
+
+    <p><code>div.block+h1{"Never fear, Prompto's here!"}+p{"I never miss... A photo op."}*3</code>
+    <br>This + creates an expands the block.
+    </p>
+
+    <p><code>.blocks*2>h2{"Blondie!"}+img+p>lorem</code></p>
+
+    <h2>Grouping and Climbing</h2>
+
+    <p><code>.container>h1{Course}+p>lorem>a{Ignis though}^p{"That's it! I've come up with a new recipeh!"}</code>
+    <br>This is climbing signalled with the use of ^.
+    </p>
+
+    <p><code>.container>h1{Course}+p>lorem>a{Ignis though}+p{"That's it! I've come up with a new recipeh!"}</code>
+    <br>This is grouping, signalled by ().
+    </p>
+
+    <h2>Numbers</h2>
+
+    <p><code>.container>img[class="thumbnail $"]*5
+    <br>This creates 5 images with numbered classes.
+    </code></p>
+
+    <p><code>.container>img[class="thumbnail_$"]*5</code>
+    <br>This creates 5 images with numbered classes with an underscore.
+    </p>
+
+    <p><code>.container>img[class="thumbnail $@5"]*5</code>
+    <br>This creates 5 images with numbered classes with the count starting at 5.
+    </p>
+
+    <p><code>.container>img[class="thumbnail $@5-"]*5</code>
+    <br>This creates 5 images with numbered classes with the class counting down from 5.
+    </p>
+
+    <h2>Toggling Comments</h2>
+
+    <p>To comment out using emmet, simply select the text and ctrl (or cmd) + forward slash. Using this same combination will undo the comment. This same command works for css.</p>
+
+    <!-- <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla atque dignissimos sint distinctio obcaecati eaque magni voluptas. Vel dolore odio doloremque ea quis ut magnam. Rerum voluptate molestiae minus veritatis.</p>
+    </div> -->
+
+    <h2>Attributes</h2>
+
+    <p>
+        <code>.container>img[src="images/xyz/100x100"]</code>
+        <br>
+        <em>Note: This will not work, img is bogus.</em>
+    </p>
+
+    <p><code>a[href="http//www.google.com"]{Click Here}
+    <br>This is how to create with emmet.
+    </code></p>
 
     <script src="emmet.js"></script>
     
